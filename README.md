@@ -1,15 +1,21 @@
 # bigprime
 An easy tool to generate big prime numbers
 
-Requirment : libgmp (https://gmplib.org/)
+Requirment : **libgmp** (https://gmplib.org/)
+
+To install libgmp on a Debian based system : 
+
+```
+sudo apt install libgmp-dev
+```
 
 ## How to use it ? ##
 
-Just call the following function : **getPrime()**
+Just call the following function : **mpz_class getPrime(size_t size, bool checksize=false)**
 
 Two parameters can be passed : 
-* size in bits of output prime numbers [integer]
-* (optional) size checking before return, not activated by default m[boolean]
+* size in bits of output prime numbers **[integer]**
+* (optional) size checking before return, not activated by default **[boolean]**
 
 
 Build the example : 
